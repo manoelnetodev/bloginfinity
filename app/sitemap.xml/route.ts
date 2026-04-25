@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://blog.infinitygravity.com";
+const BASE_URL = "https://infinitygravity.com/blog";
 
 export function GET() {
   const posts = getAllPosts();
@@ -11,7 +11,7 @@ export function GET() {
     .map(
       (post) => `
   <url>
-    <loc>${BASE_URL}/blog/${post.slug}</loc>
+    <loc>${BASE_URL}/${post.slug}</loc>
     <lastmod>${new Date(post.date).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

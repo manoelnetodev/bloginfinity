@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://blog.infinitygravity.com";
+const BASE_URL = "https://infinitygravity.com/blog";
 
 export function GET() {
   const posts = getAllPosts();
@@ -12,10 +12,10 @@ export function GET() {
       (post) => `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>${BASE_URL}/blog/${post.slug}</link>
+      <link>${BASE_URL}/${post.slug}</link>
       <description><![CDATA[${post.description}]]></description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <guid isPermaLink="true">${BASE_URL}/blog/${post.slug}</guid>
+      <guid isPermaLink="true">${BASE_URL}/${post.slug}</guid>
       ${post.tags.map((tag) => `<category>${tag}</category>`).join("\n      ")}
     </item>`
     )

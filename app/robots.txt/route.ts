@@ -1,6 +1,6 @@
 export const dynamic = "force-static";
 
-const BASE_URL = "https://blog.infinitygravity.com";
+const BASE_URL = "https://infinitygravity.com/blog";
 
 export function GET() {
   const robots = `User-agent: *

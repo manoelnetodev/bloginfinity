@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: post.image ? [post.image] : [],
     },
     alternates: {
-      canonical: `/blog/${slug}`,
+      canonical: `/${slug}`,
     },
   };
 }
@@ -96,7 +96,7 @@ export default async function PostPage({ params }: Props) {
             headline: post.title,
             description: post.description,
             image: post.image
-              ? `https://blog.infinitygravity.com${post.image}`
+              ? `https://infinitygravity.com/blog${post.image}`
               : undefined,
             datePublished: post.date,
             author: {
@@ -109,7 +109,7 @@ export default async function PostPage({ params }: Props) {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://blog.infinitygravity.com/blog/${slug}`,
+              "@id": `https://infinitygravity.com/blog/${slug}`,
             },
           }),
         }}

@@ -10,7 +10,7 @@ export function PostCard({ post }: { post: Post }) {
 
   return (
     <article className="group rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--muted))]/50 p-6 transition-all hover:border-brand-500/50 hover:shadow-lg hover:shadow-brand-500/5">
-      <Link href={`/blog/${post.slug}`}>
+      <Link href={`/${post.slug}`}>
         <div className="flex flex-col gap-3">
           <div className="flex flex-wrap gap-2">
             {post.tags.slice(0, 3).map((tag) => (

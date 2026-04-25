@@ -19,6 +19,18 @@ export function Footer() {
             Site Principal
           </a>
         </div>
+        <p className="mt-3 text-xs text-[hsl(var(--muted-foreground))]/60">
+          🤖 Construído com ajuda de IA &middot; Orquestrado por{" "}
+          <a
+            href="https://bmad.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-400 hover:text-brand-300 transition-colors"
+          >
+            BMAD
+          </a>
+          {" "}&middot; Powered by vibes ⚡
+        </p>
       </div>
     </footer>
   );

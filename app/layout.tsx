@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://infinitygravity.com/blog"),
+  metadataBase: new URL("https://blog.infinitygravity.com.br"),
   title: {
     default: "Infinity Gravity Blog — Tecnologia e Produtividade Google",
     template: "%s | Infinity Gravity Blog",

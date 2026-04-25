@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://infinitygravity.com/blog";
+const BASE_URL = "https://blog.infinitygravity.com.br";
 
 export function GET() {
   const posts = getAllPosts();

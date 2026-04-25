@@ -96,7 +96,7 @@ export default async function PostPage({ params }: Props) {
             headline: post.title,
             description: post.description,
             image: post.image
-              ? `https://infinitygravity.com/blog${post.image}`
+              ? `https://blog.infinitygravity.com.br${post.image}`
               : undefined,
             datePublished: post.date,
             author: {
@@ -109,7 +109,7 @@ export default async function PostPage({ params }: Props) {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://infinitygravity.com/blog/${slug}`,
+              "@id": `https://blog.infinitygravity.com.br/${slug}`,
             },
           }),
         }}

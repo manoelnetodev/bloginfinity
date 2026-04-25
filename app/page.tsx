@@ -34,11 +34,11 @@ export default function HomePage() {
             name: "Infinity Gravity Blog",
             description:
               "Tutoriais, dicas e guias sobre tecnologia Google, produtividade e planos familiares.",
-            url: "https://infinitygravity.com/blog",
+            url: "https://blog.infinitygravity.com.br",
             blogPost: posts.map((post) => ({
               "@type": "BlogPosting",
               headline: post.title,
-              url: `https://infinitygravity.com/blog/${post.slug}`,
+              url: `https://blog.infinitygravity.com.br/${post.slug}`,
               datePublished: post.date,
             })),
           }),
